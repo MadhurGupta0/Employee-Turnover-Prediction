@@ -17,7 +17,7 @@ Employee turnover prediction is crucial for organizations to retain talent and r
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/employee-turnover-prediction.git
+   git clone https://github.com/MadhurGupta0/employee-turnover-prediction.git
    cd employee-turnover-prediction
 2. Install the required dependencies:
    ```bash
