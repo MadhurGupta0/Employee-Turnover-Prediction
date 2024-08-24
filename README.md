@@ -19,3 +19,8 @@ Employee turnover prediction is crucial for organizations to retain talent and r
    ```bash
    git clone https://github.com/yourusername/employee-turnover-prediction.git
    cd employee-turnover-prediction
+   bash'''
+2. Install the required dependencies:
+   '''bash
+   pip install -r requirements.txt
+   bash'''
