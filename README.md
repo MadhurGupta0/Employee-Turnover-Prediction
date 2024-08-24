@@ -9,7 +9,7 @@ This project aims to predict employee turnover using machine learning models. We
 - Models and Evaluation
 - Dependencies
 - Results
-- License
+- Model Download
 
 ## Introduction
 Employee turnover prediction is crucial for organizations to retain talent and reduce costs associated with hiring and training new employees. This project uses machine learning techniques to predict whether an employee will leave the company based on various features.
@@ -19,8 +19,46 @@ Employee turnover prediction is crucial for organizations to retain talent and r
    ```bash
    git clone https://github.com/yourusername/employee-turnover-prediction.git
    cd employee-turnover-prediction
-   bash'''
 2. Install the required dependencies:
-   '''bash
+   ```bash
    pip install -r requirements.txt
-   bash'''
+
+## Usage
+1. Run the script to train the models and evaluate their performance.
+2. The script will output the accuracy and classification report for both Logistic Regression and Random Forest models.
+
+## Models and Evaluation
+### Logistic Regression
+- Trained using the LogisticRegression class from sklearn.linear_model.
+- Evaluated using accuracy score and classification report.
+### Random Forest
+- Trained using the RandomForestClassifier class from sklearn.ensemble.
+- Evaluated using accuracy score and classification report.
+
+  
+## Dependencies
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- joblib
+
+## Results
+The results of the model evaluations will be displayed in the console, including accuracy scores and classification reports. Additionally, a bar chart comparing the accuracy of both models will be generated.
+
+## Model Download
+You can directly download the Employee Turnover model (employee_turnover_model.joblib) to use the model for predictions without retraining. Simply load the model using joblib:
+
+```Python
+
+import joblib
+
+# Load the model
+model = joblib.load('employee_turnover_model.joblib')
+
+# Use the model for predictions
+predictions = model.predict(X_test)
+```
+
+
+   
